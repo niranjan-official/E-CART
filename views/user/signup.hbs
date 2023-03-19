@@ -1,0 +1,44 @@
+<section>
+    <div class="container">
+        <div class="row d-flex justify-content-center mt-5">
+            <div>
+
+
+                <form action="/signup" method="POST">
+                    <h2 class="text-center">SIGNUP</h2>
+
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="Name" placeholder="Your Name">
+                    </div>
+
+                    <div class="form-group" style="width: 25rem;">
+                        <label>Email address</label>
+                        <input type="email" class="form-control" name="Email" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+
+                    </div>
+                    <div class="form-group">
+                        <label>Enter a Password</label>
+                        <input type="password" class="form-control" name="Password" placeholder="Password">
+                    </div>
+                    <div class="col">
+                        <a href="/login" class="account-color">Already have account ?</a>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn text-light col"
+                            style="background-color: darkorchid;">Signup</button>
+                        <div></div>
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<style>
+    .account-color {
+        color: rgb(62, 0, 107);
+    }
+</style>

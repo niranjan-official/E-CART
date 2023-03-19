@@ -1,0 +1,63 @@
+<header>
+    <nav style="background-color: darkorchid;" class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand font-design" href="/">
+            <h3 class="text-light m-2"><b>E-CART</b></h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-5">
+                <li class="nav-item active">
+                    <a class="nav-link text-light " style="font-size: larger;" href="/"><b>Products</b><span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" style="font-size: larger;" href="/cart"><b>Cart</b><span
+                            class="badge badge-success" id="cart-count"> {{cartCount}} </span></a>
+                </li>
+                {{#if user}}
+                <li class="nav-item">
+                    <a class="nav-link text-light" style="font-size: larger;" href="/orders"><b>Orders</b></a>
+                </li>
+                {{/if}}
+
+
+            </ul>
+            <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{#if user}}
+                    {{user.Name}}
+                    {{else}}
+                    Account
+                    {{/if}}
+                </button>
+                <div class="dropdown-menu" style="background-color: rgb(216, 201, 245)"
+                    aria-labelledby="dropdownMenuButton">
+
+
+                    {{#if user}}
+                    <a class="dropdown-item" href="/logout"><b>Logout</b></a>
+                    {{else}}
+                    <a class="dropdown-item" href="/login"><b>Login</b></a>
+                    {{/if}}
+
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<style>
+    .font-design {
+        font-family: serif;
+        border: 2px solid;
+        border-color: #eee;
+        border-radius: 20%;
+
+    }
+</style>

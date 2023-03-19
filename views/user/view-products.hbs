@@ -1,0 +1,30 @@
+<section>
+    <div class="container mt-5">
+        <div class="row">
+            {{#each products}}
+            <div class="col-lg-3 p-3">
+                <div class="card bg-color" style="width: 15rem; height: 25rem;">
+                    <img class="card-img-top" src="/product-images/{{this._id}}.jpg" alt="Card image cap"
+                        style="height: 12rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"><i>{{this.Name}}</i></h5>
+                        <p class="card-text text-primary"><b>Rs: {{this.Price}}/-</b></p>
+                        <p class="card-text"
+                            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                            <b>{{this.Description}}</b></p>
+
+                        <button onclick="addToCart('{{this._id}}')" class="btn text-light"
+                            style="background-color: #9932cc;">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+<style>
+    .bg-color {
+        border: 1px solid;
+        border-color: darkorchid;
+    }
+</style>

@@ -1,0 +1,51 @@
+<section>
+    <div class="container">
+        <div class="row mt-4">
+            <a class="btn btn-success ml-auto" href="/admin/add-product">Add Product</a>
+        </div>
+        <table class="table mt-5 bg-color display" id="tableID">
+            <thead>
+                <tr>
+
+                    <th scope="col">Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each products}}
+                <tr>
+
+                    <td class="font">{{this.Name}}</td>
+                    <td class="font">{{this.Category}}</td>
+                    <td class="font">{{this.Price}}/-</td>
+                    <td class="font">{{this.Description}}</td>
+                    <td><img style="width: 50px;height: 50px" src="/product-images/{{this._id}}.jpg" alt=""></td>
+                    <td><a href="/admin/edit-product/{{this._id}}" class="btn btn-primary">Edit</a>
+                        <a href="/admin/delete-product/{{this._id}}" class="btn btn-danger"
+                            onclick="return confirm('Are you want to delete {{this.Name}}?')">Delete</a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+
+        </table>
+
+    </div>
+</section>
+<style>
+    .bg-color {
+        border: 2px solid;
+        border-color: darkorchid;
+        border-style: groove;
+
+    }
+
+    .font {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+</style>
