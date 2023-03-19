@@ -7,30 +7,30 @@
 
 ***The e-commerce website has the following features:***
 
-*User authentication and authorization system for secure login and signup
+*User authentication and authorization system for secure login and signup*
 
-Product listing with images, descriptions, and prices
+*Product listing with images, descriptions, and prices*
 
-Add-to-cart feature for customers to add products to their cart before making a purchase
+*Add-to-cart feature for customers to add products to their cart before making a purchase*
 
-Checkout system that uses the Razorpay API for secure payments
+*Checkout system that uses the Razorpay API for secure payments*
 
-Order tracking system that allows customers to view their order history and current order status*
+*Order tracking system that allows customers to view their order history and current order status*
 
 ## Requirements
 
 *To run the e-commerce website, you will need to have the following software installed on your machine:*
 
-***Node.js
+***Node.js***
 
-MongoDB***
+***MongoDB***
 
 ## Conclusion
 
 Thank you for checking out my first full-stack project! I hope you enjoy using the e-commerce website and find it useful. Please feel free to leave any feedback or suggestions for improvement.
 
-**FOR HELP CONTACT:
+**FOR HELP CONTACT:**
 
-             Linkedin- Niranjan Sabarinath
+           ** Linkedin- Niranjan Sabarinath**
              
-             instgram- @niranjanofficial__**
+            ** instgram- @niranjanofficial__**
