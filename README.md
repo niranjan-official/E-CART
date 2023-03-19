@@ -31,6 +31,6 @@ Thank you for checking out my first full-stack project! I hope you enjoy using t
 
 **FOR HELP CONTACT:**
 
-           ** Linkedin- Niranjan Sabarinath**
+           **Linkedin- Niranjan Sabarinath**
              
-            ** instgram- @niranjanofficial__**
+            **instgram- @niranjanofficial__**
